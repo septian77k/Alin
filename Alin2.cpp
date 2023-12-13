@@ -54,7 +54,7 @@ float S;
             for(int k = 0; k < col; k++){
                 matriks[i][k] = matriks[i][k] - matriks[row][k] * S;
             }
-            //menampilkan matriks
+            //menampilkan matriks proses row reduction
             cout<<endl;
             cout<<"baris ke: "<< i+1 <<" dikurangi baris ke "<< i <<" dikali dengan "<<S<<endl ;
                 for(int b = 0; b < baris; b++){
@@ -73,7 +73,7 @@ float S;
         for(int k = 0; k < col; k++){
             matriks[br][k] -= matriks[baris-brs][k] * S;
         }
-
+        //menampilkan matriks proses gauss jordan
          cout<<endl;
             cout<<"baris ke: "<< br+1 <<" dikurangi baris ke "<< baris-brs+1 <<" dikali dengan "<<S<<endl ;
                 for(int b = 0; b < baris; b++){
@@ -87,7 +87,7 @@ float S;
 
     }
     
-     //menampilkan matriks
+     //menampilkan matriks hasil
             cout<<"matriks hasil : "<<endl;
                 for(int b = 0; b < baris; b++){
                     for(int k = 0; k < col; k++){
